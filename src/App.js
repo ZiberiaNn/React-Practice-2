@@ -1,23 +1,23 @@
 import logo from './logo.svg';
+import Button from './Components/Button';
 import './App.css';
 
+
 function App() {
+  const handleClick = () =>{
+
+  }
+
+  const restartCount = () => {
+
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='main-container'>
+        <Button text="Click" isClick={true} handleClick={handleClick} ></Button>
+        <Button text="Restart" isClick={false} handleClick={restartCount} ></Button>
+      </div>
     </div>
   );
 }
